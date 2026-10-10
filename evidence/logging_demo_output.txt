@@ -1,15 +1,15 @@
 LOGGING DEMO: threshold=WARNING; console + file
-2026-10-06 16:45:40,628 | WARNING | logging_demo | DEMO: внешняя служба отвечает медленно
-2026-10-06 16:45:40,628 | ERROR | logging_demo | DEMO: контролируемый пример ошибки
-2026-10-06 16:45:40,628 | CRITICAL | logging_demo | DEMO: контролируемый пример критического события
+2026-10-10 18:35:44,715 | WARNING | logging_demo | DEMO: внешняя служба отвечает медленно
+2026-10-10 18:35:44,716 | ERROR | logging_demo | DEMO: контролируемый пример ошибки
+2026-10-10 18:35:44,716 | CRITICAL | logging_demo | DEMO: контролируемый пример критического события
 LOGGING DEMO: threshold=INFO; console + file
-2026-10-06 16:45:40,628 | INFO | logging_demo | DEMO: действие успешно завершено
-2026-10-06 16:45:40,628 | WARNING | logging_demo | DEMO: внешняя служба отвечает медленно
-2026-10-06 16:45:40,628 | ERROR | logging_demo | DEMO: контролируемый пример ошибки
-2026-10-06 16:45:40,628 | CRITICAL | logging_demo | DEMO: контролируемый пример критического события
+2026-10-10 18:35:44,716 | INFO | logging_demo | DEMO: действие успешно завершено
+2026-10-10 18:35:44,716 | WARNING | logging_demo | DEMO: внешняя служба отвечает медленно
+2026-10-10 18:35:44,716 | ERROR | logging_demo | DEMO: контролируемый пример ошибки
+2026-10-10 18:35:44,716 | CRITICAL | logging_demo | DEMO: контролируемый пример критического события
 LOGGING DEMO: threshold=DEBUG; console + file
-2026-10-06 16:45:40,629 | DEBUG | logging_demo | DEMO: подробности отладки
-2026-10-06 16:45:40,629 | INFO | logging_demo | DEMO: действие успешно завершено
-2026-10-06 16:45:40,629 | WARNING | logging_demo | DEMO: внешняя служба отвечает медленно
-2026-10-06 16:45:40,629 | ERROR | logging_demo | DEMO: контролируемый пример ошибки
-2026-10-06 16:45:40,629 | CRITICAL | logging_demo | DEMO: контролируемый пример критического события
+2026-10-10 18:35:44,716 | DEBUG | logging_demo | DEMO: подробности отладки
+2026-10-10 18:35:44,716 | INFO | logging_demo | DEMO: действие успешно завершено
+2026-10-10 18:35:44,716 | WARNING | logging_demo | DEMO: внешняя служба отвечает медленно
+2026-10-10 18:35:44,716 | ERROR | logging_demo | DEMO: контролируемый пример ошибки
+2026-10-10 18:35:44,716 | CRITICAL | logging_demo | DEMO: контролируемый пример критического события

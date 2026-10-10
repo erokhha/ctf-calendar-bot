@@ -9,7 +9,10 @@ from logging_setup import configure_logging
 
 def main() -> None:
     for level in ("WARNING", "INFO", "DEBUG"):
-        configure_logging(Settings(log_path=Path(f"evidence/logging_{level.lower()}.log"), log_level=level))
+        log_path = Path(f"evidence/logging_{level.lower()}.log")
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        log_path.write_text("", encoding="utf-8")
+        configure_logging(Settings(log_path=log_path, log_level=level))
         log = logging.getLogger("logging_demo")
         print(f"LOGGING DEMO: threshold={level}; console + file", flush=True)
         log.debug("DEMO: подробности отладки")
