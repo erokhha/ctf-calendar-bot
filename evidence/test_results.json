@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-06T14:45:31.849909+00:00",
+  "generated_at_utc": "2026-10-10T11:49:34.529101+00:00",
   "kind": "actual_local_test_execution_with_synthetic_fixtures",
   "live_telegram": false,
   "live_external_apis": false,
@@ -11,7 +11,7 @@
     "python-dotenv": "1.1.1",
     "httpx": "0.28.1"
   },
-  "tests_run": 44,
+  "tests_run": 47,
   "failures": 0,
   "errors": 0,
   "success": true,
@@ -33,6 +33,10 @@
       "status": "passed"
     },
     {
+      "test": "test_project.ConfigurationAndStructureTests.test_empty_primary_names_fall_back_to_legacy_tokens",
+      "status": "passed"
+    },
+    {
       "test": "test_project.ConfigurationAndStructureTests.test_import_main_has_no_network_or_polling",
       "status": "passed"
     },
@@ -42,6 +46,10 @@
     },
     {
       "test": "test_project.ConfigurationAndStructureTests.test_missing_required_token",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ConfigurationAndStructureTests.test_relative_runtime_paths_resolve_from_project_directory",
       "status": "passed"
     },
     {
@@ -58,6 +66,10 @@
     },
     {
       "test": "test_project.DirectAPITests.test_broadcast_hello_and_photo_to_two_fixtures",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.DirectAPITests.test_broadcast_rejects_empty_recipient_list",
       "status": "passed"
     },
     {
@@ -195,16 +207,16 @@
   ],
   "fixtures_sha256": "53d45ae09451d9adae78a71e945f4ae5a7e29fad65ad1f2fd9f6f729e4cbad80",
   "source_sha256": {
-    "api_examples.py": "d224d952b1e7d2f15171642e7429660d077a5970ee032992c3de4cf92ef10da6",
+    "api_examples.py": "2cddcd197b82e6cb6d260eadf7f9f1bcbf7775a106d5b9138ea5a5ac74f0ead3",
     "bot.py": "6ae6804c143a9c7c54db299bb5c7c5741c15e739bc4362d4b1217ea68b8fce1c",
-    "config.py": "f6fc0b0716dfd52adae1edfbb9b04ebcc8c7511c713a89d2c9aeed68530b7675",
+    "config.py": "a77e9c63e14023aab65f45c139cf1805c2f3d1b3aa3662a93188ccdb3440c903",
     "demo_local.py": "9d9108cb5114404ac2007fe113d202fcfec0c950b6fa4bd1703b66cf3f571cdf",
     "example_for_log.py": "8b484aeb51c7ac6a68d5f882fe1bc7ce94bd107dcfa7ffb65cc59ab9933dcb7f",
     "handlers.py": "8a4ea08d4b1fe7078afcc33871ae9a8983670e4cbcb8fea774a77c25ce334f2e",
     "logging_setup.py": "de5189e2530666950efb55ca3d062ca33f649c65f0e61d00a5cfd19c75446cb9",
     "main.py": "aae42cf7187689b0439133d0a08d7d53fe97ae4456f454d76e403c501059b064",
     "run_local_checks.py": "82e22e6a4cd768d742fa8f4a1d8d19534b7b70087cd747b0ed30ce845388ce3f",
-    "services.py": "63cc1f99f5b72d1a8e2ce35e32c610d667b4bac28ca76edc93971c0d5dc74c06",
+    "services.py": "3efe63686a2e262a665c6a3767f2833f5d7ece0a5fec666e23130b4500bb4b9c",
     "storage.py": "d37ab068608205ade5bca4ec09af27af39ab96dfbe680d6c69d87cc6c80bfe18"
   }
 }
