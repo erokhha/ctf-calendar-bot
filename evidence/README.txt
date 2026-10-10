@@ -26,8 +26,20 @@ live_telegram_bot_config_2026-10-10.json — реальные read-only отве
 getMe, описание, короткое описание, семь команд, отсутствие webhook и наличие Botpic.
 Значение токена и пользовательские Telegram ID в файл не включены.
 
+live_telegram_single_account_2026-10-10.json — реальная проверка одного личного аккаунта:
+/start, /help, /myid, неизвестная команда, reply-клавиатура, CTFtime 1/10 → 2/10,
+RoboHash и TheCatAPI. При остановленном polling также выполнены getUpdates с offset,
+sendMessage и sendPhoto. Токен, user ID и chat ID в файл не включены.
+
+screenshots/live_start_help_2026-10-10.jpg — профиль бота, /start и /help.
+screenshots/live_ctftime_card_2_of_10_2026-10-10.jpg — вторая карточка CTFtime и кнопки.
+screenshots/live_media_robohash_catapi_2026-10-10.jpg — реально доставленные изображения.
+screenshots/live_direct_bot_api_sendmessage_sendphoto_2026-10-10.jpg — сообщения,
+отправленные прямыми методами sendMessage и sendPhoto.
+
 В локальных transcript/test-прогонах сети Telegram, CTFtime, OpenWeatherMap и TheCatAPI
-не вызывались. BotFather и публичные API проверены отдельно живыми запросами. Два живых
-аккаунта, доставка сообщений и изображений, OpenWeatherMap с ключом и PythonAnywhere
-остаются ручными проверками из MANUAL_CHECKLIST.md. Локальные результаты нельзя выдавать
-за подтверждение этих ещё не выполненных внешних действий.
+не вызывались. BotFather, публичные API и один личный Telegram-аккаунт проверены отдельно
+живыми запросами. Второй аккаунт, рассылка двум адресатам, OpenWeatherMap с ключом и
+PythonAnywhere остаются ручными проверками из MANUAL_CHECKLIST.md; публикация в GitHub
+также не выполнялась. Локальные результаты нельзя выдавать за подтверждение этих ещё не
+выполненных внешних действий.
