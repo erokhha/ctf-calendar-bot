@@ -19,7 +19,15 @@ logging_warning.log, logging_info.log, logging_debug.log — соответст�
 Все сообщения помечены DEMO: строки ERROR/CRITICAL являются упражнением,
 а не признаком реального падения приложения.
 
-Сети Telegram, CTFtime, OpenWeatherMap и TheCatAPI в этих прогонах не вызывались.
-BotFather, два живых аккаунта, настоящие изображения и PythonAnywhere остаются
-отдельными ручными проверками из MANUAL_CHECKLIST.md. Подлинные результаты
-локального исполнения не должны выдаваться за подтверждение этих внешних действий.
+live_public_api_check_2026-10-10.json — реальные HTTP GET-проверки CTFtime,
+TheCatAPI и RoboHash. Они подтверждают доступность ответов, но не доставку в Telegram.
+
+live_telegram_bot_config_2026-10-10.json — реальные read-only ответы Telegram Bot API:
+getMe, описание, короткое описание, семь команд, отсутствие webhook и наличие Botpic.
+Значение токена и пользовательские Telegram ID в файл не включены.
+
+В локальных transcript/test-прогонах сети Telegram, CTFtime, OpenWeatherMap и TheCatAPI
+не вызывались. BotFather и публичные API проверены отдельно живыми запросами. Два живых
+аккаунта, доставка сообщений и изображений, OpenWeatherMap с ключом и PythonAnywhere
+остаются ручными проверками из MANUAL_CHECKLIST.md. Локальные результаты нельзя выдавать
+за подтверждение этих ещё не выполненных внешних действий.
