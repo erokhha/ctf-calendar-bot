@@ -51,6 +51,6 @@ test_weather_invalid_coordinates_no_http (test_project.ServiceTests.test_weather
 test_weather_missing_key_no_http (test_project.ServiceTests.test_weather_missing_key_no_http) ... ok
 
 ----------------------------------------------------------------------
-Ran 47 tests in 0.916s
+Ran 47 tests in 0.932s
 
 OK

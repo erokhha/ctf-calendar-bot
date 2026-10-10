@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-10T11:49:34.765023+00:00",
+  "generated_at_utc": "2026-10-10T12:50:25.058358+00:00",
   "kind": "ACTUAL_LOCAL_HANDLER_EXECUTION_WITH_SYNTHETIC_INPUTS",
   "telegram_transport": "AsyncMock; messages not delivered",
   "external_api_transport": "actual aiohttp requests to loopback 127.0.0.1 fixture server",
@@ -190,16 +190,16 @@
       "output": [
         {
           "kind": "reply_text",
-          "text": "CTF-соревнование 1 из 2\n\nИмя: Учебный CTF Alpha [фикстура]\nТип: Jeopardy\nНачало: 10.10.2026 в 13:00\nКонец: 11.10.2026 в 13:00\nВремя: Москва (UTC+3).\nБудет проходить в онлайн-режиме.\nСсылка на страницу CTFtime: https://ctftime.org/event/9900001/",
+          "text": "CTF-соревнование 1 из 2\n\nУчебный CTF Alpha [фикстура]\nФормат: Jeopardy\nНачало по Москве: 10.10.2026 13:00\nОкончание по Москве: 11.10.2026 13:00\nУчастие: онлайн\nCTFtime: https://ctftime.org/event/9900001/",
           "reply_markup": {
             "inline_keyboard": [
               [
                 {
-                  "callback_data": "ctf:8ac8cfbe:0",
+                  "callback_data": "ctf:c4e9e5f1:0",
                   "text": "1 / 2"
                 },
                 {
-                  "callback_data": "ctf:8ac8cfbe:1",
+                  "callback_data": "ctf:c4e9e5f1:1",
                   "text": "▶"
                 }
               ],
@@ -221,7 +221,7 @@
       "output": [
         {
           "kind": "edit_message_text",
-          "text": "CTF-соревнование 2 из 2\n\nИмя: Учебный CTF Beta [фикстура]\nТип: Attack-Defense\nНачало: 17.10.2026 в 12:00\nКонец: 17.10.2026 в 20:00\nВремя: Москва (UTC+3).\nБудет проходить в Учебная аудитория.\nСсылка на страницу CTFtime: https://ctftime.org/event/9900002/"
+          "text": "CTF-соревнование 2 из 2\n\nУчебный CTF Beta [фикстура]\nФормат: Attack-Defense\nНачало по Москве: 17.10.2026 12:00\nОкончание по Москве: 17.10.2026 20:00\nУчастие: очно, Учебная аудитория\nCTFtime: https://ctftime.org/event/9900002/"
         }
       ]
     },
@@ -489,16 +489,16 @@
       "output": [
         {
           "kind": "reply_text",
-          "text": "CTF-соревнование 1 из 2\n\nИмя: Учебный CTF Alpha [фикстура]\nТип: Jeopardy\nНачало: 10.10.2026 в 13:00\nКонец: 11.10.2026 в 13:00\nВремя: Москва (UTC+3).\nБудет проходить в онлайн-режиме.\nСсылка на страницу CTFtime: https://ctftime.org/event/9900001/",
+          "text": "CTF-соревнование 1 из 2\n\nУчебный CTF Alpha [фикстура]\nФормат: Jeopardy\nНачало по Москве: 10.10.2026 13:00\nОкончание по Москве: 11.10.2026 13:00\nУчастие: онлайн\nCTFtime: https://ctftime.org/event/9900001/",
           "reply_markup": {
             "inline_keyboard": [
               [
                 {
-                  "callback_data": "ctf:30a0fe4e:0",
+                  "callback_data": "ctf:a60ee9f5:0",
                   "text": "1 / 2"
                 },
                 {
-                  "callback_data": "ctf:30a0fe4e:1",
+                  "callback_data": "ctf:a60ee9f5:1",
                   "text": "▶"
                 }
               ],
@@ -520,7 +520,7 @@
       "output": [
         {
           "kind": "edit_message_text",
-          "text": "CTF-соревнование 2 из 2\n\nИмя: Учебный CTF Beta [фикстура]\nТип: Attack-Defense\nНачало: 17.10.2026 в 12:00\nКонец: 17.10.2026 в 20:00\nВремя: Москва (UTC+3).\nБудет проходить в Учебная аудитория.\nСсылка на страницу CTFtime: https://ctftime.org/event/9900002/"
+          "text": "CTF-соревнование 2 из 2\n\nУчебный CTF Beta [фикстура]\nФормат: Attack-Defense\nНачало по Москве: 17.10.2026 12:00\nОкончание по Москве: 17.10.2026 20:00\nУчастие: очно, Учебная аудитория\nCTFtime: https://ctftime.org/event/9900002/"
         }
       ]
     },

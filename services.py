@@ -1,8 +1,4 @@
-"""Асинхронные JSON API и форматирование карточки CTF.
-
-Форма ctf_text адаптирована из Wyndace/CTF-Calendar-BOT;
-точный источник и границы переработки указаны в PROVENANCE.md.
-"""
+"""Асинхронные JSON API и форматирование ответов внешних сервисов."""
 
 import asyncio
 from dataclasses import dataclass
@@ -112,21 +108,24 @@ class CTFEvent:
     url: str
 
 
-def ctf_text(ctf: CTFEvent, first_text: str = "") -> str:
-    """Сохранена структура карточки исходного бота; даты теперь из JSON, UTC+3."""
-    starts = ctf.starts.astimezone(MSK)
-    ends = ctf.ends.astimezone(MSK)
-    if not ctf.onsite:
-        place = "Будет проходить в онлайн-режиме."
-    elif ctf.location:
-        place = f"Будет проходить в {ctf.location}."
+def format_ctf_event(event: CTFEvent, heading: str = "") -> str:
+    """Формирует самостоятельную карточку события из нормализованных данных CTFtime."""
+    starts = event.starts.astimezone(MSK)
+    ends = event.ends.astimezone(MSK)
+    if event.onsite and event.location:
+        participation = f"очно, {event.location}"
+    elif event.onsite:
+        participation = "очно, место пока не опубликовано"
     else:
-        place = "Место очного соревнования пока не указано."
-    return (f"{first_text}Имя: {ctf.title}\nТип: {ctf.format}\n"
-            f"Начало: {starts:%d.%m.%Y} в {starts:%H:%M}\n"
-            f"Конец: {ends:%d.%m.%Y} в {ends:%H:%M}\n"
-            f"Время: Москва (UTC+3).\n{place}\n"
-            f"Ссылка на страницу CTFtime: {ctf.url}")
+        participation = "онлайн"
+    return (
+        f"{heading}{event.title}\n"
+        f"Формат: {event.format}\n"
+        f"Начало по Москве: {starts:%d.%m.%Y %H:%M}\n"
+        f"Окончание по Москве: {ends:%d.%m.%Y %H:%M}\n"
+        f"Участие: {participation}\n"
+        f"CTFtime: {event.url}"
+    )
 
 
 def parse_datetime(value: object) -> datetime:

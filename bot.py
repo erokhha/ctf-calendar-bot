@@ -30,7 +30,10 @@ async def post_init(app: Application) -> None:
     app.bot_data["store"] = ChatStore(settings.db_path)
     await app.bot.set_my_commands([
         BotCommand("start", "Открыть меню"), BotCommand("help", "Справка"),
-        BotCommand("id", "Мой ID и ID чата"), BotCommand("ctf", "Ближайшие CTF"),
+        BotCommand("id", "Мой ID и ID чата"),
+        BotCommand("myid", "Мой ID и ID чата"),
+        BotCommand("ctf", "Ближайшие CTF"),
+        BotCommand("showctf", "Ближайшие CTF"),
         BotCommand("weather", "Погода по геолокации"),
     ])
     log.info("bot_ready mode=polling")

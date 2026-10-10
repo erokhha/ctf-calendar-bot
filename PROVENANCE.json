@@ -9,18 +9,22 @@
   "original_file_included_in_deliverable": false,
   "adapted_features": [
     "CTF use case",
-    "ctf_text card fields and location branches",
     "showctf command",
-    "inline card navigation"
+    "idea of inline card navigation"
   ],
+  "original_code_included": false,
+  "ctf_card_formatter": "independent format_ctf_event implementation over CTFtime JSON",
   "not_ported": [
     "HTML scraping with fixed year 2021",
     "exec keyboard builder",
     "Timer notification loop",
     "hardcoded chat ID"
   ],
-  "live_telegram_execution": false,
-  "live_external_api_execution": false,
+  "live_telegram_execution": true,
+  "live_external_api_execution": true,
   "pythonanywhere_deployed": false,
-  "github_modified": false
+  "github_repository": "https://github.com/erokhha/ctf-calendar-bot",
+  "github_publication_type": "standalone public repository",
+  "github_published": true,
+  "upstream_repository_modified": false
 }

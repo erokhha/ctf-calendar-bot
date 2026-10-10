@@ -1,0 +1,112 @@
+{
+  "generated_at_utc": "2026-10-10T12:35:18Z",
+  "kind": "actual_live_telegram_single_account_and_direct_bot_api_verification",
+  "live_telegram": true,
+  "identifiers_redacted": true,
+  "participating_private_accounts": 1,
+  "polling": {
+    "started": true,
+    "stopped_cleanly": true
+  },
+  "handler_checks": {
+    "start": {
+      "ok": true,
+      "personalized": true,
+      "reply_keyboard_buttons": [
+        "Фото котика",
+        "Мой аватар",
+        "Мой ID",
+        "CTF-соревнования",
+        "Погода",
+        "Помощь"
+      ]
+    },
+    "help": {
+      "ok": true
+    },
+    "myid": {
+      "ok": true,
+      "user_id_present": true,
+      "chat_id_present": true,
+      "values_stored_in_evidence": false
+    },
+    "unknown_command": {
+      "ok": true,
+      "friendly_fallback": true
+    },
+    "ctftime": {
+      "ok": true,
+      "event_count": 10,
+      "navigation_verified": "1_to_2",
+      "second_card_title": "Securinets CTF Quals 2026"
+    },
+    "robohash": {
+      "ok": true,
+      "telegram_photo_received": true
+    },
+    "thecatapi": {
+      "ok": true,
+      "telegram_photo_received": true,
+      "requested_breed": "beng",
+      "api_key_configured": false
+    },
+    "weather": {
+      "location_prompt_received": true,
+      "location_sent": false,
+      "live_weather_received": false
+    }
+  },
+  "direct_bot_api": {
+    "getUpdates": {
+      "http_ok": true,
+      "received_updates": 1,
+      "known_private_chats": 1,
+      "next_offset_present": true,
+      "acknowledgement_request_received_updates": 0
+    },
+    "sendMessage": {
+      "http_ok": true,
+      "message_id_present": true
+    },
+    "sendPhoto": {
+      "http_ok": true,
+      "message_id_present": true
+    }
+  },
+  "screenshots": [
+    {
+      "path": "screenshots/live_start_help_2026-10-10.jpg",
+      "dimensions": "720x590",
+      "bytes": 81652,
+      "sha256": "473970244828ed9f79bb3699e5f3cd3f30d7f194ee0b41adad96d03b280111d1"
+    },
+    {
+      "path": "screenshots/live_ctftime_card_2_of_10_2026-10-10.jpg",
+      "dimensions": "720x620",
+      "bytes": 79788,
+      "sha256": "7b31be6493a5d4f43ec006321c493988eb81153b19ba2bb73dfd48748550f790"
+    },
+    {
+      "path": "screenshots/live_media_robohash_catapi_2026-10-10.jpg",
+      "dimensions": "720x560",
+      "bytes": 66938,
+      "sha256": "4d3d121b7baa226f84d2360961468b177d1a04e47a39ab90734aae47aa7c5f1e"
+    },
+    {
+      "path": "screenshots/live_direct_bot_api_sendmessage_sendphoto_2026-10-10.jpg",
+      "dimensions": "720x620",
+      "bytes": 61225,
+      "sha256": "3cd0a445f7e94d0d581d613df2d4ae12eebd783f44536375bd2cd1bbb5100ca5"
+    }
+  ],
+  "not_yet_verified": [
+    "second_real_telegram_account",
+    "broadcast_to_two_real_private_chats",
+    "live_openweather_response_from_mobile_location",
+    "pythonanywhere_deployment"
+  ],
+  "security": {
+    "telegram_token_in_evidence": false,
+    "telegram_user_or_chat_ids_in_evidence": false
+  }
+}
