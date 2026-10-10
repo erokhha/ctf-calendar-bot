@@ -33,6 +33,8 @@ sendMessage и sendPhoto. Токен, user ID и chat ID в файл не вкл
 
 screenshots/live_start_help_2026-10-10.jpg — профиль бота, /start и /help.
 screenshots/live_ctftime_card_2_of_10_2026-10-10.jpg — вторая карточка CTFtime и кнопки.
+Снимок сделан до финального упрощения подписей карточки: он подтверждает живой запрос
+и навигацию, но точный текущий текст карточки проверяется тестами и local_transcript.
 screenshots/live_media_robohash_catapi_2026-10-10.jpg — реально доставленные изображения.
 screenshots/live_direct_bot_api_sendmessage_sendphoto_2026-10-10.jpg — сообщения,
 отправленные прямыми методами sendMessage и sendPhoto.
@@ -40,6 +42,7 @@ screenshots/live_direct_bot_api_sendmessage_sendphoto_2026-10-10.jpg — соо�
 В локальных transcript/test-прогонах сети Telegram, CTFtime, OpenWeatherMap и TheCatAPI
 не вызывались. BotFather, публичные API и один личный Telegram-аккаунт проверены отдельно
 живыми запросами. Второй аккаунт, рассылка двум адресатам, OpenWeatherMap с ключом и
-PythonAnywhere остаются ручными проверками из MANUAL_CHECKLIST.md; публикация в GitHub
-также не выполнялась. Локальные результаты нельзя выдавать за подтверждение этих ещё не
-выполненных внешних действий.
+PythonAnywhere остаются ручными проверками из MANUAL_CHECKLIST.md. Проект опубликован
+как самостоятельный публичный репозиторий https://github.com/erokhha/ctf-calendar-bot;
+это не fork. Локальные результаты нельзя выдавать за подтверждение ещё не выполненных
+внешних действий.
