@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-10T12:13:35.489608+00:00",
+  "generated_at_utc": "2026-10-10T12:50:24.855546+00:00",
   "kind": "actual_local_test_execution_with_synthetic_fixtures",
   "live_telegram": false,
   "live_external_apis": false,
@@ -212,11 +212,11 @@
     "config.py": "a77e9c63e14023aab65f45c139cf1805c2f3d1b3aa3662a93188ccdb3440c903",
     "demo_local.py": "9d9108cb5114404ac2007fe113d202fcfec0c950b6fa4bd1703b66cf3f571cdf",
     "example_for_log.py": "8b484aeb51c7ac6a68d5f882fe1bc7ce94bd107dcfa7ffb65cc59ab9933dcb7f",
-    "handlers.py": "8a4ea08d4b1fe7078afcc33871ae9a8983670e4cbcb8fea774a77c25ce334f2e",
+    "handlers.py": "aa411bc9870d1e1f25e1d3ed9686449991906450c4a146aa04b2a664ddb8e325",
     "logging_setup.py": "de5189e2530666950efb55ca3d062ca33f649c65f0e61d00a5cfd19c75446cb9",
     "main.py": "aae42cf7187689b0439133d0a08d7d53fe97ae4456f454d76e403c501059b064",
     "run_local_checks.py": "82e22e6a4cd768d742fa8f4a1d8d19534b7b70087cd747b0ed30ce845388ce3f",
-    "services.py": "3efe63686a2e262a665c6a3767f2833f5d7ece0a5fec666e23130b4500bb4b9c",
+    "services.py": "944b11a5c22eae1553147f7942c0aeef123871e2fd87e20d724363ea11d03243",
     "storage.py": "d37ab068608205ade5bca4ec09af27af39ab96dfbe680d6c69d87cc6c80bfe18"
   }
 }

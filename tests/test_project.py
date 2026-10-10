@@ -28,7 +28,7 @@ from bot import build_application, post_init, post_shutdown
 from config import ConfigurationError, Settings, load_settings
 import handlers
 from logging_setup import SecretFilter
-from services import ApiServices, ServiceError, avatar_url, ctf_text, valid_https_url
+from services import ApiServices, ServiceError, avatar_url, format_ctf_event, valid_https_url
 from storage import ChatStore
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -173,10 +173,10 @@ class ServiceTests(LocalServerCase):
         self.assertEqual(int(params["start"]), int(FIXED_NOW.timestamp()))
         self.assertEqual(int(params["finish"]) - int(params["start"]), 90 * 86400)
         self.assertEqual(params["limit"], "10")
-        text = ctf_text(events[0])
-        self.assertIn("10.10.2026 в 13:00", text)
-        self.assertIn("онлайн-режиме", text)
-        self.assertIn("Учебная аудитория", ctf_text(events[1]))
+        text = format_ctf_event(events[0])
+        self.assertIn("10.10.2026 13:00", text)
+        self.assertIn("Участие: онлайн", text)
+        self.assertIn("Учебная аудитория", format_ctf_event(events[1]))
 
     async def test_ctf_empty_and_invalid_response(self):
         self.responses["ctf"] = []

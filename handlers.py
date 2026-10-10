@@ -9,7 +9,7 @@ from telegram.constants import ChatType
 from telegram.error import BadRequest, Forbidden, RetryAfter, TelegramError
 from telegram.ext import ContextTypes
 
-from services import ApiServices, ServiceError, avatar_url, ctf_text
+from services import ApiServices, ServiceError, avatar_url, format_ctf_event
 from storage import ChatStore
 
 log = logging.getLogger(__name__)
@@ -168,7 +168,7 @@ async def show_ctf(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         while len(snapshots) > 5:
             del snapshots[next(iter(snapshots))]
         await update.effective_message.reply_text(
-            ctf_text(events[0], f"CTF-соревнование 1 из {len(events)}\n\n"),
+            format_ctf_event(events[0], f"CTF-соревнование 1 из {len(events)}\n\n"),
             reply_markup=ctf_keyboard(snapshot_id, 0, len(events), events[0].url),
         )
         log.info("ctf_list loaded count=%s", len(events))
@@ -193,7 +193,7 @@ async def ctf_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     await query.answer()
     try:
         await query.edit_message_text(
-            text=ctf_text(events[page], f"CTF-соревнование {page + 1} из {len(events)}\n\n"),
+            text=format_ctf_event(events[page], f"CTF-соревнование {page + 1} из {len(events)}\n\n"),
             reply_markup=ctf_keyboard(snapshot_id, page, len(events), events[page].url),
         )
     except BadRequest as exc:
