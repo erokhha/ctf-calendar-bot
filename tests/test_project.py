@@ -11,6 +11,7 @@ import json
 import logging
 import os
 from pathlib import Path
+import sqlite3
 import subprocess
 import sys
 import tempfile
@@ -350,6 +351,31 @@ class DirectAPITests(LocalServerCase):
 
 
 class ConfigurationAndStructureTests(unittest.TestCase):
+    def test_chat_store_closes_each_sqlite_connection(self):
+        connections = []
+        real_connect = sqlite3.connect
+
+        class TrackingConnection(sqlite3.Connection):
+            closed = False
+
+            def close(self):
+                self.closed = True
+                super().close()
+
+        def tracking_connect(*args, **kwargs):
+            connection = real_connect(*args, factory=TrackingConnection, **kwargs)
+            connections.append(connection)
+            return connection
+
+        with tempfile.TemporaryDirectory() as tmp, patch("storage.sqlite3.connect", side_effect=tracking_connect):
+            store = ChatStore(Path(tmp) / "chats.sqlite3")
+            store.remember(900000001, "private")
+            self.assertEqual(store.active_ids(), [900000001])
+            store.deactivate(900000001)
+
+        self.assertEqual(len(connections), 4)
+        self.assertTrue(all(connection.closed for connection in connections))
+
     def test_missing_required_token(self):
         with patch.dict(os.environ, {}, clear=True):
             with self.assertRaises(ConfigurationError):
