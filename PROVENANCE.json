@@ -23,5 +23,8 @@
   "live_telegram_execution": true,
   "live_external_api_execution": true,
   "pythonanywhere_deployed": false,
-  "github_modified": false
+  "github_repository": "https://github.com/erokhha/ctf-calendar-bot",
+  "github_publication_type": "standalone public repository",
+  "github_published": true,
+  "upstream_repository_modified": false
 }
