@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-10T12:50:24.855546+00:00",
+  "generated_at_utc": "2026-10-10T15:19:23.683183+00:00",
   "kind": "actual_local_test_execution_with_synthetic_fixtures",
   "live_telegram": false,
   "live_external_apis": false,
@@ -11,7 +11,7 @@
     "python-dotenv": "1.1.1",
     "httpx": "0.28.1"
   },
-  "tests_run": 47,
+  "tests_run": 48,
   "failures": 0,
   "errors": 0,
   "success": true,
@@ -26,6 +26,10 @@
     },
     {
       "test": "test_project.ConfigurationAndStructureTests.test_broadcast_requires_confirm_before_token_or_network",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ConfigurationAndStructureTests.test_chat_store_closes_each_sqlite_connection",
       "status": "passed"
     },
     {
@@ -217,6 +221,6 @@
     "main.py": "aae42cf7187689b0439133d0a08d7d53fe97ae4456f454d76e403c501059b064",
     "run_local_checks.py": "82e22e6a4cd768d742fa8f4a1d8d19534b7b70087cd747b0ed30ce845388ce3f",
     "services.py": "944b11a5c22eae1553147f7942c0aeef123871e2fd87e20d724363ea11d03243",
-    "storage.py": "d37ab068608205ade5bca4ec09af27af39ab96dfbe680d6c69d87cc6c80bfe18"
+    "storage.py": "bb6b35ba15c113cd98be4547969c41ba64b1560ed57312fdc4464100b24740f6"
   }
 }

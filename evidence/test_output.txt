@@ -5,6 +5,7 @@ Python 3.12.14
 test_application_registers_commands_and_callbacks_without_network (test_project.ConfigurationAndStructureTests.test_application_registers_commands_and_callbacks_without_network) ... ok
 test_avatar_is_deterministic_and_user_specific (test_project.ConfigurationAndStructureTests.test_avatar_is_deterministic_and_user_specific) ... ok
 test_broadcast_requires_confirm_before_token_or_network (test_project.ConfigurationAndStructureTests.test_broadcast_requires_confirm_before_token_or_network) ... ok
+test_chat_store_closes_each_sqlite_connection (test_project.ConfigurationAndStructureTests.test_chat_store_closes_each_sqlite_connection) ... ok
 test_dotenv_reads_local_fixture (test_project.ConfigurationAndStructureTests.test_dotenv_reads_local_fixture) ... ok
 test_empty_primary_names_fall_back_to_legacy_tokens (test_project.ConfigurationAndStructureTests.test_empty_primary_names_fall_back_to_legacy_tokens) ... ok
 test_import_main_has_no_network_or_polling (test_project.ConfigurationAndStructureTests.test_import_main_has_no_network_or_polling) ... ok
@@ -51,6 +52,6 @@ test_weather_invalid_coordinates_no_http (test_project.ServiceTests.test_weather
 test_weather_missing_key_no_http (test_project.ServiceTests.test_weather_missing_key_no_http) ... ok
 
 ----------------------------------------------------------------------
-Ran 47 tests in 0.932s
+Ran 48 tests in 0.917s
 
 OK
