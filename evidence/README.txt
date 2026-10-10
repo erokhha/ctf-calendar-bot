@@ -1,7 +1,7 @@
 СТАТУС И ПРОИСХОЖДЕНИЕ ДОКАЗАТЕЛЬСТВ
 
 test_results.json — машинно-читаемый результат реально выполненного run_local_checks.py:
-44 unit/integration проверки, 0 failures, 0 errors. Внутри есть версии зависимостей,
+47 unit/integration проверок, 0 failures, 0 errors. Внутри есть версии зависимостей,
 время выполнения, имена проверок и SHA-256 проверенных Python-файлов.
 
 test_output.txt — подлинный текст stdout тестового runner.

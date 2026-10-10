@@ -7,6 +7,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+PROJECT_DIR = Path(__file__).resolve().parent
+
 
 class ConfigurationError(ValueError):
     """Сообщение этой ошибки можно показывать без раскрытия секретов."""
@@ -27,10 +29,15 @@ class Settings:
     telegram_proxy: str | None = None
 
 
-def load_settings(*, require_token: bool = True, env_file: str = ".env") -> Settings:
+def project_path(value: str | Path) -> Path:
+    path = Path(value).expanduser()
+    return path if path.is_absolute() else PROJECT_DIR / path
+
+
+def load_settings(*, require_token: bool = True, env_file: str | Path = ".env") -> Settings:
     # Дополнение: секреты читаются из .env; переменные процесса имеют приоритет.
-    load_dotenv(env_file, override=False)
-    token = os.getenv("TELEGRAM_BOT_TOKEN", os.getenv("TOKEN", "")).strip()
+    load_dotenv(project_path(env_file), override=False)
+    token = (os.getenv("TELEGRAM_BOT_TOKEN") or os.getenv("TOKEN", "")).strip()
     if require_token and (not token or ":" not in token or "replace" in token.lower()):
         raise ConfigurationError("Заполните TELEGRAM_BOT_TOKEN в .env токеном BotFather.")
     try:
@@ -51,14 +58,14 @@ def load_settings(*, require_token: bool = True, env_file: str = ".env") -> Sett
         raise ConfigurationError("LOG_LEVEL должен быть DEBUG, INFO, WARNING, ERROR или CRITICAL.")
     return Settings(
         telegram_token=token,
-        weather_api_key=os.getenv("WEATHER_API_KEY", os.getenv("TOKEN_WEATHER", "")).strip(),
+        weather_api_key=(os.getenv("WEATHER_API_KEY") or os.getenv("TOKEN_WEATHER", "")).strip(),
         cat_api_key=os.getenv("CAT_API_KEY", "").strip(),
         cat_breed=breed,
         timeout_seconds=timeout,
         ctf_limit=limit,
         ctf_days=days,
-        db_path=Path(os.getenv("DATABASE_PATH", "data/chats.sqlite3")),
-        log_path=Path(os.getenv("LOG_PATH", "logs/bot.log")),
+        db_path=project_path(os.getenv("DATABASE_PATH", "data/chats.sqlite3")),
+        log_path=project_path(os.getenv("LOG_PATH", "logs/bot.log")),
         log_level=level,
         telegram_proxy=os.getenv("TELEGRAM_PROXY_URL") or None,
     )

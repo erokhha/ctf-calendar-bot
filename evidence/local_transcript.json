@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-06T14:45:39.972186+00:00",
+  "generated_at_utc": "2026-10-10T11:49:34.765023+00:00",
   "kind": "ACTUAL_LOCAL_HANDLER_EXECUTION_WITH_SYNTHETIC_INPUTS",
   "telegram_transport": "AsyncMock; messages not delivered",
   "external_api_transport": "actual aiohttp requests to loopback 127.0.0.1 fixture server",
@@ -195,11 +195,11 @@
             "inline_keyboard": [
               [
                 {
-                  "callback_data": "ctf:cd018b72:0",
+                  "callback_data": "ctf:8ac8cfbe:0",
                   "text": "1 / 2"
                 },
                 {
-                  "callback_data": "ctf:cd018b72:1",
+                  "callback_data": "ctf:8ac8cfbe:1",
                   "text": "▶"
                 }
               ],
@@ -494,11 +494,11 @@
             "inline_keyboard": [
               [
                 {
-                  "callback_data": "ctf:2351cd27:0",
+                  "callback_data": "ctf:30a0fe4e:0",
                   "text": "1 / 2"
                 },
                 {
-                  "callback_data": "ctf:2351cd27:1",
+                  "callback_data": "ctf:30a0fe4e:1",
                   "text": "▶"
                 }
               ],

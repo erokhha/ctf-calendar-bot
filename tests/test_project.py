@@ -302,6 +302,14 @@ class HandlerTests(LocalServerCase):
 
 
 class DirectAPITests(LocalServerCase):
+    async def test_broadcast_rejects_empty_recipient_list(self):
+        api = DirectBotAPI(self.session, "FIXTURE_TOKEN", self.base)
+        with self.assertRaises(ConfigurationError):
+            await broadcast(
+                api, self.store, "Привет [фикстура]", "https://example.org/FIXTURE.jpg", interval=0
+            )
+        self.assertEqual(self.requests, [])
+
     async def test_get_updates_extracts_only_private_chat_ids(self):
         api = DirectBotAPI(self.session, "FIXTURE_TOKEN", self.base)
         updates = await api.get_updates()
@@ -361,6 +369,29 @@ class ConfigurationAndStructureTests(unittest.TestCase):
                 settings = load_settings(env_file=str(env_file))
                 self.assertEqual(settings.cat_breed, "beng")
                 self.assertTrue(settings.telegram_token.endswith("NOT_REAL"))
+
+    def test_empty_primary_names_fall_back_to_legacy_tokens(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            env_file = Path(tmp) / "test.env"
+            env_file.write_text(
+                "TELEGRAM_BOT_TOKEN=\nTOKEN=123456:LEGACY_FIXTURE_ONLY\n"
+                "WEATHER_API_KEY=\nTOKEN_WEATHER=LEGACY_WEATHER_FIXTURE\n",
+                encoding="utf-8",
+            )
+            with patch.dict(os.environ, {}, clear=True):
+                settings = load_settings(env_file=env_file)
+            self.assertEqual(settings.telegram_token, "123456:LEGACY_FIXTURE_ONLY")
+            self.assertEqual(settings.weather_api_key, "LEGACY_WEATHER_FIXTURE")
+
+    def test_relative_runtime_paths_resolve_from_project_directory(self):
+        with patch.dict(
+            os.environ,
+            {"DATABASE_PATH": "state/chats.sqlite3", "LOG_PATH": "state/bot.log"},
+            clear=True,
+        ):
+            settings = load_settings(require_token=False, env_file="missing-fixture.env")
+        self.assertEqual(settings.db_path, ROOT / "state/chats.sqlite3")
+        self.assertEqual(settings.log_path, ROOT / "state/bot.log")
 
     def test_avatar_is_deterministic_and_user_specific(self):
         first = avatar_url(900000001, "fixture_erokhina", "fixture")

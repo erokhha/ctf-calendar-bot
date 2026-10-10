@@ -114,6 +114,8 @@ class CTFEvent:
 
 def ctf_text(ctf: CTFEvent, first_text: str = "") -> str:
     """Сохранена структура карточки исходного бота; даты теперь из JSON, UTC+3."""
+    starts = ctf.starts.astimezone(MSK)
+    ends = ctf.ends.astimezone(MSK)
     if not ctf.onsite:
         place = "Будет проходить в онлайн-режиме."
     elif ctf.location:
@@ -121,8 +123,8 @@ def ctf_text(ctf: CTFEvent, first_text: str = "") -> str:
     else:
         place = "Место очного соревнования пока не указано."
     return (f"{first_text}Имя: {ctf.title}\nТип: {ctf.format}\n"
-            f"Начало: {ctf.starts.astimezone(MSK):%d.%m.%Y в %H:%M}\n"
-            f"Конец: {ctf.ends.astimezone(MSK):%d.%m.%Y в %H:%M}\n"
+            f"Начало: {starts:%d.%m.%Y} в {starts:%H:%M}\n"
+            f"Конец: {ends:%d.%m.%Y} в {ends:%H:%M}\n"
             f"Время: Москва (UTC+3).\n{place}\n"
             f"Ссылка на страницу CTFtime: {ctf.url}")
 
