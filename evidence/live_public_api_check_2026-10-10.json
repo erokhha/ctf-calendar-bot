@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-10",
+  "scope": "Direct public GET requests from the local development machine; no Telegram delivery",
+  "results": [
+    {
+      "service": "TheCatAPI",
+      "status": 200,
+      "items": 1,
+      "https_image": true,
+      "note": "The endpoint responded without a key during this check; current official documentation still requires an API key for supported use."
+    },
+    {
+      "service": "CTFtime",
+      "status": 200,
+      "items": 10,
+      "first_item_has_required_fields": true
+    },
+    {
+      "service": "RoboHash",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 48228
+    }
+  ],
+  "not_checked": [
+    "OpenWeather: no owner API key is present",
+    "Telegram Bot API: no bot has been created in this run",
+    "PythonAnywhere: no authenticated account is available"
+  ]
+}

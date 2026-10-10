@@ -1,0 +1,61 @@
+{
+  "generated_at_utc": "2026-10-10T12:22:26Z",
+  "kind": "actual_live_telegram_bot_api_read_only_verification",
+  "live_telegram": true,
+  "bot": {
+    "id": 8891289591,
+    "username": "erokhina_ctf_practice_bot",
+    "name": "CTF-календарь Ерохиной",
+    "link": "https://t.me/erokhina_ctf_practice_bot"
+  },
+  "requests": {
+    "getMe": {
+      "http_status": 200,
+      "ok": true
+    },
+    "getMyDescription": {
+      "http_status": 200,
+      "ok": true,
+      "description": "Учебный помощник: ближайшие CTF-соревнования, погода по геолокации, фото котиков и персональный аватар. Нажмите «Запустить», чтобы открыть меню."
+    },
+    "getMyShortDescription": {
+      "http_status": 200,
+      "ok": true,
+      "short_description": "CTF-календарь. Учебная адаптация Wyndace/CTF-Calendar-BOT с внешними JSON API."
+    },
+    "getMyCommands": {
+      "http_status": 200,
+      "ok": true,
+      "commands": [
+        "start",
+        "help",
+        "id",
+        "myid",
+        "ctf",
+        "showctf",
+        "weather"
+      ]
+    },
+    "getUserProfilePhotos": {
+      "http_status": 200,
+      "ok": true,
+      "total_count": 1,
+      "first_photo_sizes": 3
+    },
+    "getWebhookInfo": {
+      "http_status": 200,
+      "ok": true,
+      "url": "",
+      "pending_update_count": 0
+    }
+  },
+  "botfather": {
+    "profile_photo_update_confirmed": true
+  },
+  "security": {
+    "current_token_in_evidence": false,
+    "dotenv_mode": "0600",
+    "dotenv_tracked_by_git": false,
+    "current_token_matches_in_tracked_files_and_git_history": 0
+  }
+}

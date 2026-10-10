@@ -101,8 +101,13 @@ async def broadcast(api: DirectBotAPI, store: ChatStore, text: str, photo_url: s
                     *, interval: float = 0.1) -> list[dict]:
     if not valid_https_url(photo_url):
         raise ValueError("Изображение должно иметь корректный HTTPS URL.")
+    chat_ids = store.active_ids()
+    if not chat_ids:
+        raise ConfigurationError(
+            "Нет активных личных чатов. Сначала получите обновления через get-updates."
+        )
     results = []
-    for chat_id in store.active_ids():
+    for chat_id in chat_ids:
         sent_steps = []
         try:
             for method in ("message", "photo"):

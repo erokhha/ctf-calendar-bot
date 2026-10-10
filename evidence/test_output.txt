@@ -6,13 +6,16 @@ test_application_registers_commands_and_callbacks_without_network (test_project.
 test_avatar_is_deterministic_and_user_specific (test_project.ConfigurationAndStructureTests.test_avatar_is_deterministic_and_user_specific) ... ok
 test_broadcast_requires_confirm_before_token_or_network (test_project.ConfigurationAndStructureTests.test_broadcast_requires_confirm_before_token_or_network) ... ok
 test_dotenv_reads_local_fixture (test_project.ConfigurationAndStructureTests.test_dotenv_reads_local_fixture) ... ok
+test_empty_primary_names_fall_back_to_legacy_tokens (test_project.ConfigurationAndStructureTests.test_empty_primary_names_fall_back_to_legacy_tokens) ... ok
 test_import_main_has_no_network_or_polling (test_project.ConfigurationAndStructureTests.test_import_main_has_no_network_or_polling) ... ok
 test_invalid_numeric_configuration (test_project.ConfigurationAndStructureTests.test_invalid_numeric_configuration) ... ok
 test_missing_required_token (test_project.ConfigurationAndStructureTests.test_missing_required_token) ... ok
+test_relative_runtime_paths_resolve_from_project_directory (test_project.ConfigurationAndStructureTests.test_relative_runtime_paths_resolve_from_project_directory) ... ok
 test_secret_filter_removes_token_and_api_key (test_project.ConfigurationAndStructureTests.test_secret_filter_removes_token_and_api_key) ... ok
 test_url_validation (test_project.ConfigurationAndStructureTests.test_url_validation) ... ok
 test_broadcast_blocked_first_continues_second (test_project.DirectAPITests.test_broadcast_blocked_first_continues_second) ... ok
 test_broadcast_hello_and_photo_to_two_fixtures (test_project.DirectAPITests.test_broadcast_hello_and_photo_to_two_fixtures) ... ok
+test_broadcast_rejects_empty_recipient_list (test_project.DirectAPITests.test_broadcast_rejects_empty_recipient_list) ... ok
 test_direct_malformed_json_and_timeout (test_project.DirectAPITests.test_direct_malformed_json_and_timeout) ... ok
 test_direct_send_message_and_photo (test_project.DirectAPITests.test_direct_send_message_and_photo) ... ok
 test_get_updates_extracts_only_private_chat_ids (test_project.DirectAPITests.test_get_updates_extracts_only_private_chat_ids) ... ok
@@ -48,6 +51,6 @@ test_weather_invalid_coordinates_no_http (test_project.ServiceTests.test_weather
 test_weather_missing_key_no_http (test_project.ServiceTests.test_weather_missing_key_no_http) ... ok
 
 ----------------------------------------------------------------------
-Ran 44 tests in 1.009s
+Ran 47 tests in 0.932s
 
 OK

@@ -3,23 +3,28 @@
   "original_file": "ctf-games.py",
   "commit": "044aa1b10d1402b36b408b09bf131d929fb44d4f",
   "git_blob": "f32ea24cb8fad9309e766c25bb9c109b027084ef",
-  "fetched_original_sha256": "915674b1481ad6cb246af8db12c565ab9be50e387209926cd4eb7e691b6707f2",
+  "raw_source_sha256": "51a5971b2ef8942b970313dd0832be15e22512133fbe6cbd3635b45e04a03fd0",
+  "normalized_with_trailing_lf_sha256": "915674b1481ad6cb246af8db12c565ab9be50e387209926cd4eb7e691b6707f2",
   "license_file_present_in_checked_tree": false,
   "original_file_included_in_deliverable": false,
   "adapted_features": [
     "CTF use case",
-    "ctf_text card fields and location branches",
     "showctf command",
-    "inline card navigation"
+    "idea of inline card navigation"
   ],
+  "original_code_included": false,
+  "ctf_card_formatter": "independent format_ctf_event implementation over CTFtime JSON",
   "not_ported": [
     "HTML scraping with fixed year 2021",
     "exec keyboard builder",
     "Timer notification loop",
     "hardcoded chat ID"
   ],
-  "live_telegram_execution": false,
-  "live_external_api_execution": false,
+  "live_telegram_execution": true,
+  "live_external_api_execution": true,
   "pythonanywhere_deployed": false,
-  "github_modified": false
+  "github_repository": "https://github.com/erokhha/ctf-calendar-bot",
+  "github_publication_type": "standalone public repository",
+  "github_published": true,
+  "upstream_repository_modified": false
 }
