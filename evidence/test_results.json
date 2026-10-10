@@ -1,0 +1,210 @@
+{
+  "generated_at_utc": "2026-10-06T14:45:31.849909+00:00",
+  "kind": "actual_local_test_execution_with_synthetic_fixtures",
+  "live_telegram": false,
+  "live_external_apis": false,
+  "live_hosting": false,
+  "python": "3.12.14",
+  "dependencies": {
+    "python-telegram-bot": "22.5",
+    "aiohttp": "3.13.5",
+    "python-dotenv": "1.1.1",
+    "httpx": "0.28.1"
+  },
+  "tests_run": 44,
+  "failures": 0,
+  "errors": 0,
+  "success": true,
+  "tests": [
+    {
+      "test": "test_project.ConfigurationAndStructureTests.test_application_registers_commands_and_callbacks_without_network",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ConfigurationAndStructureTests.test_avatar_is_deterministic_and_user_specific",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ConfigurationAndStructureTests.test_broadcast_requires_confirm_before_token_or_network",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ConfigurationAndStructureTests.test_dotenv_reads_local_fixture",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ConfigurationAndStructureTests.test_import_main_has_no_network_or_polling",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ConfigurationAndStructureTests.test_invalid_numeric_configuration",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ConfigurationAndStructureTests.test_missing_required_token",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ConfigurationAndStructureTests.test_secret_filter_removes_token_and_api_key",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ConfigurationAndStructureTests.test_url_validation",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.DirectAPITests.test_broadcast_blocked_first_continues_second",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.DirectAPITests.test_broadcast_hello_and_photo_to_two_fixtures",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.DirectAPITests.test_direct_malformed_json_and_timeout",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.DirectAPITests.test_direct_send_message_and_photo",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.DirectAPITests.test_get_updates_extracts_only_private_chat_ids",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_ctf_callbacks_reject_bad_index_and_other_users_snapshot",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_ctf_inline_snapshot_navigation_and_stale_callback",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_ctf_same_page_bad_request_does_not_crash",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_id_user_and_chat_for_two_synthetic_users",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_location_button_and_weather_return_menu",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_missing_location_is_handled_without_http",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_moscow_is_explicit_fallback",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_personalized_start_for_two_synthetic_users",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_photo_and_avatar_are_send_photo_calls",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_telegram_photo_bad_request_returns_menu",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_unknown_input_has_help_and_keyboard",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.HandlerTests.test_weather_failure_restores_menu",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.LifecycleTests.test_session_created_and_closed_in_application_lifecycle",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_cat_breed_random_params_and_api_key",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_cat_empty_and_unsafe_urls",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_cat_empty_list",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_ctf_all_bad_records_have_friendly_error",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_ctf_dynamic_window_and_card",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_ctf_empty_and_invalid_response",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_ctf_end_before_start_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_ctf_partial_bad_records_are_skipped",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_http_401_403_429_500",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_invalid_json_and_content_type",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_invalid_request_url",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_network_failure",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_timeout",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_weather_coordinates_units_and_fields",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_weather_incomplete_and_invalid_schema",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_weather_invalid_coordinates_no_http",
+      "status": "passed"
+    },
+    {
+      "test": "test_project.ServiceTests.test_weather_missing_key_no_http",
+      "status": "passed"
+    }
+  ],
+  "fixtures_sha256": "53d45ae09451d9adae78a71e945f4ae5a7e29fad65ad1f2fd9f6f729e4cbad80",
+  "source_sha256": {
+    "api_examples.py": "d224d952b1e7d2f15171642e7429660d077a5970ee032992c3de4cf92ef10da6",
+    "bot.py": "6ae6804c143a9c7c54db299bb5c7c5741c15e739bc4362d4b1217ea68b8fce1c",
+    "config.py": "f6fc0b0716dfd52adae1edfbb9b04ebcc8c7511c713a89d2c9aeed68530b7675",
+    "demo_local.py": "9d9108cb5114404ac2007fe113d202fcfec0c950b6fa4bd1703b66cf3f571cdf",
+    "example_for_log.py": "8b484aeb51c7ac6a68d5f882fe1bc7ce94bd107dcfa7ffb65cc59ab9933dcb7f",
+    "handlers.py": "8a4ea08d4b1fe7078afcc33871ae9a8983670e4cbcb8fea774a77c25ce334f2e",
+    "logging_setup.py": "de5189e2530666950efb55ca3d062ca33f649c65f0e61d00a5cfd19c75446cb9",
+    "main.py": "aae42cf7187689b0439133d0a08d7d53fe97ae4456f454d76e403c501059b064",
+    "run_local_checks.py": "82e22e6a4cd768d742fa8f4a1d8d19534b7b70087cd747b0ed30ce845388ce3f",
+    "services.py": "63cc1f99f5b72d1a8e2ce35e32c610d667b4bac28ca76edc93971c0d5dc74c06",
+    "storage.py": "d37ab068608205ade5bca4ec09af27af39ab96dfbe680d6c69d87cc6c80bfe18"
+  }
+}

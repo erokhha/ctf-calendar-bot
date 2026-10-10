@@ -1,0 +1,908 @@
+{
+  "generated_at_utc": "2026-10-06T14:45:39.972186+00:00",
+  "kind": "ACTUAL_LOCAL_HANDLER_EXECUTION_WITH_SYNTHETIC_INPUTS",
+  "telegram_transport": "AsyncMock; messages not delivered",
+  "external_api_transport": "actual aiohttp requests to loopback 127.0.0.1 fixture server",
+  "live_telegram": false,
+  "live_external_apis": false,
+  "actions": [
+    {
+      "fixture_user": "Ерохина [фикстура]",
+      "fixture_user_id": 900000001,
+      "input": "/start",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Привет, Ерохина [фикстура]! Я учебный CTF-календарь.\nПоказываю ближайшие соревнования, погоду, фото котиков и персональный аватар.\nВыберите кнопку ниже. Команды: /help, /id, /ctf, /weather.",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "text": "Фото котика"
+                },
+                {
+                  "text": "Мой аватар"
+                }
+              ],
+              [
+                {
+                  "text": "Мой ID"
+                },
+                {
+                  "text": "CTF-соревнования"
+                }
+              ],
+              [
+                {
+                  "text": "Погода"
+                },
+                {
+                  "text": "Помощь"
+                }
+              ]
+            ],
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Ерохина [фикстура]",
+      "fixture_user_id": 900000001,
+      "input": "/id",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Ваш ID: 900000001\nID чата: 900000001",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "text": "Фото котика"
+                },
+                {
+                  "text": "Мой аватар"
+                }
+              ],
+              [
+                {
+                  "text": "Мой ID"
+                },
+                {
+                  "text": "CTF-соревнования"
+                }
+              ],
+              [
+                {
+                  "text": "Погода"
+                },
+                {
+                  "text": "Помощь"
+                }
+              ]
+            ],
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Ерохина [фикстура]",
+      "fixture_user_id": 900000001,
+      "input": "Фото котика",
+      "output": [
+        {
+          "kind": "reply_photo_payload_only",
+          "photo_url": "https://cdn2.thecatapi.com/images/FIXTURE_ONLY_BENG.jpg",
+          "caption": "Случайный котик. Порода: beng. Источник: TheCatAPI.",
+          "image_downloaded": false
+        }
+      ]
+    },
+    {
+      "fixture_user": "Ерохина [фикстура]",
+      "fixture_user_id": 900000001,
+      "input": "Мой аватар",
+      "output": [
+        {
+          "kind": "reply_photo_payload_only",
+          "photo_url": "https://robohash.org/d219c2db11e83032632e2f19f1d809dd2d3afec5055fbae01fda80fabd052baa.png?set=set1&bgset=bg1&size=400x400",
+          "caption": "Ерохина [фикстура], ваш робот. При неизменных ID и имени аватар повторяется. Источник: RoboHash.",
+          "image_downloaded": false
+        }
+      ]
+    },
+    {
+      "fixture_user": "Ерохина [фикстура]",
+      "fixture_user_id": 900000001,
+      "input": "Погода",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Отправьте геолокацию кнопкой ниже. Можно выбрать «Погода в Москве» или вернуться в меню. Москва — отдельный вариант, а не определение вашего местоположения.",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "request_location": true,
+                  "text": "Отправить координаты"
+                }
+              ],
+              [
+                {
+                  "text": "Погода в Москве"
+                },
+                {
+                  "text": "В меню"
+                }
+              ]
+            ],
+            "one_time_keyboard": true,
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Ерохина [фикстура]",
+      "fixture_user_id": 900000001,
+      "input": "Погода в Москве",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Москва — выбранный запасной город; это не ваша геолокация.\n\nПогода сейчас: Москва\nОблачно\nТемпература: 8.5 °C (ощущается как 6.8 °C)\nВетер: 3.2 м/с. Слабый ветер.\nИсточник: OpenWeatherMap.",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "text": "Фото котика"
+                },
+                {
+                  "text": "Мой аватар"
+                }
+              ],
+              [
+                {
+                  "text": "Мой ID"
+                },
+                {
+                  "text": "CTF-соревнования"
+                }
+              ],
+              [
+                {
+                  "text": "Погода"
+                },
+                {
+                  "text": "Помощь"
+                }
+              ]
+            ],
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Ерохина [фикстура]",
+      "fixture_user_id": 900000001,
+      "input": "CTF-соревнования",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "CTF-соревнование 1 из 2\n\nИмя: Учебный CTF Alpha [фикстура]\nТип: Jeopardy\nНачало: 10.10.2026 в 13:00\nКонец: 11.10.2026 в 13:00\nВремя: Москва (UTC+3).\nБудет проходить в онлайн-режиме.\nСсылка на страницу CTFtime: https://ctftime.org/event/9900001/",
+          "reply_markup": {
+            "inline_keyboard": [
+              [
+                {
+                  "callback_data": "ctf:cd018b72:0",
+                  "text": "1 / 2"
+                },
+                {
+                  "callback_data": "ctf:cd018b72:1",
+                  "text": "▶"
+                }
+              ],
+              [
+                {
+                  "text": "Открыть CTFtime",
+                  "url": "https://ctftime.org/event/9900001/"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Ерохина [фикстура]",
+      "fixture_user_id": 900000001,
+      "input": "inline: ▶",
+      "output": [
+        {
+          "kind": "edit_message_text",
+          "text": "CTF-соревнование 2 из 2\n\nИмя: Учебный CTF Beta [фикстура]\nТип: Attack-Defense\nНачало: 17.10.2026 в 12:00\nКонец: 17.10.2026 в 20:00\nВремя: Москва (UTC+3).\nБудет проходить в Учебная аудитория.\nСсылка на страницу CTFtime: https://ctftime.org/event/9900002/"
+        }
+      ]
+    },
+    {
+      "fixture_user": "Ерохина [фикстура]",
+      "fixture_user_id": 900000001,
+      "input": "/unknown",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Не распознала команду. Выберите кнопку меню или откройте /help.",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "text": "Фото котика"
+                },
+                {
+                  "text": "Мой аватар"
+                }
+              ],
+              [
+                {
+                  "text": "Мой ID"
+                },
+                {
+                  "text": "CTF-соревнования"
+                }
+              ],
+              [
+                {
+                  "text": "Погода"
+                },
+                {
+                  "text": "Помощь"
+                }
+              ]
+            ],
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Ерохина [фикстура]",
+      "fixture_user_id": 900000001,
+      "input": "location: 55.7558, 37.6173 (fixture)",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Погода по переданным координатам.\n\nПогода сейчас: Москва\nОблачно\nТемпература: 8.5 °C (ощущается как 6.8 °C)\nВетер: 3.2 м/с. Слабый ветер.\nИсточник: OpenWeatherMap.",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "text": "Фото котика"
+                },
+                {
+                  "text": "Мой аватар"
+                }
+              ],
+              [
+                {
+                  "text": "Мой ID"
+                },
+                {
+                  "text": "CTF-соревнования"
+                }
+              ],
+              [
+                {
+                  "text": "Погода"
+                },
+                {
+                  "text": "Помощь"
+                }
+              ]
+            ],
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Одногруппник [фикстура]",
+      "fixture_user_id": 900000002,
+      "input": "/start",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Привет, Одногруппник [фикстура]! Я учебный CTF-календарь.\nПоказываю ближайшие соревнования, погоду, фото котиков и персональный аватар.\nВыберите кнопку ниже. Команды: /help, /id, /ctf, /weather.",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "text": "Фото котика"
+                },
+                {
+                  "text": "Мой аватар"
+                }
+              ],
+              [
+                {
+                  "text": "Мой ID"
+                },
+                {
+                  "text": "CTF-соревнования"
+                }
+              ],
+              [
+                {
+                  "text": "Погода"
+                },
+                {
+                  "text": "Помощь"
+                }
+              ]
+            ],
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Одногруппник [фикстура]",
+      "fixture_user_id": 900000002,
+      "input": "/id",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Ваш ID: 900000002\nID чата: 900000002",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "text": "Фото котика"
+                },
+                {
+                  "text": "Мой аватар"
+                }
+              ],
+              [
+                {
+                  "text": "Мой ID"
+                },
+                {
+                  "text": "CTF-соревнования"
+                }
+              ],
+              [
+                {
+                  "text": "Погода"
+                },
+                {
+                  "text": "Помощь"
+                }
+              ]
+            ],
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Одногруппник [фикстура]",
+      "fixture_user_id": 900000002,
+      "input": "Фото котика",
+      "output": [
+        {
+          "kind": "reply_photo_payload_only",
+          "photo_url": "https://cdn2.thecatapi.com/images/FIXTURE_ONLY_BENG.jpg",
+          "caption": "Случайный котик. Порода: beng. Источник: TheCatAPI.",
+          "image_downloaded": false
+        }
+      ]
+    },
+    {
+      "fixture_user": "Одногруппник [фикстура]",
+      "fixture_user_id": 900000002,
+      "input": "Мой аватар",
+      "output": [
+        {
+          "kind": "reply_photo_payload_only",
+          "photo_url": "https://robohash.org/67e41fb11c7797ad649678cc12f72705f2e30e55b52732f1dcbfaffbbda66a9f.png?set=set1&bgset=bg1&size=400x400",
+          "caption": "Одногруппник [фикстура], ваш робот. При неизменных ID и имени аватар повторяется. Источник: RoboHash.",
+          "image_downloaded": false
+        }
+      ]
+    },
+    {
+      "fixture_user": "Одногруппник [фикстура]",
+      "fixture_user_id": 900000002,
+      "input": "Погода",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Отправьте геолокацию кнопкой ниже. Можно выбрать «Погода в Москве» или вернуться в меню. Москва — отдельный вариант, а не определение вашего местоположения.",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "request_location": true,
+                  "text": "Отправить координаты"
+                }
+              ],
+              [
+                {
+                  "text": "Погода в Москве"
+                },
+                {
+                  "text": "В меню"
+                }
+              ]
+            ],
+            "one_time_keyboard": true,
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Одногруппник [фикстура]",
+      "fixture_user_id": 900000002,
+      "input": "Погода в Москве",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Москва — выбранный запасной город; это не ваша геолокация.\n\nПогода сейчас: Москва\nОблачно\nТемпература: 8.5 °C (ощущается как 6.8 °C)\nВетер: 3.2 м/с. Слабый ветер.\nИсточник: OpenWeatherMap.",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "text": "Фото котика"
+                },
+                {
+                  "text": "Мой аватар"
+                }
+              ],
+              [
+                {
+                  "text": "Мой ID"
+                },
+                {
+                  "text": "CTF-соревнования"
+                }
+              ],
+              [
+                {
+                  "text": "Погода"
+                },
+                {
+                  "text": "Помощь"
+                }
+              ]
+            ],
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Одногруппник [фикстура]",
+      "fixture_user_id": 900000002,
+      "input": "CTF-соревнования",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "CTF-соревнование 1 из 2\n\nИмя: Учебный CTF Alpha [фикстура]\nТип: Jeopardy\nНачало: 10.10.2026 в 13:00\nКонец: 11.10.2026 в 13:00\nВремя: Москва (UTC+3).\nБудет проходить в онлайн-режиме.\nСсылка на страницу CTFtime: https://ctftime.org/event/9900001/",
+          "reply_markup": {
+            "inline_keyboard": [
+              [
+                {
+                  "callback_data": "ctf:2351cd27:0",
+                  "text": "1 / 2"
+                },
+                {
+                  "callback_data": "ctf:2351cd27:1",
+                  "text": "▶"
+                }
+              ],
+              [
+                {
+                  "text": "Открыть CTFtime",
+                  "url": "https://ctftime.org/event/9900001/"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Одногруппник [фикстура]",
+      "fixture_user_id": 900000002,
+      "input": "inline: ▶",
+      "output": [
+        {
+          "kind": "edit_message_text",
+          "text": "CTF-соревнование 2 из 2\n\nИмя: Учебный CTF Beta [фикстура]\nТип: Attack-Defense\nНачало: 17.10.2026 в 12:00\nКонец: 17.10.2026 в 20:00\nВремя: Москва (UTC+3).\nБудет проходить в Учебная аудитория.\nСсылка на страницу CTFtime: https://ctftime.org/event/9900002/"
+        }
+      ]
+    },
+    {
+      "fixture_user": "Одногруппник [фикстура]",
+      "fixture_user_id": 900000002,
+      "input": "/unknown",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Не распознала команду. Выберите кнопку меню или откройте /help.",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "text": "Фото котика"
+                },
+                {
+                  "text": "Мой аватар"
+                }
+              ],
+              [
+                {
+                  "text": "Мой ID"
+                },
+                {
+                  "text": "CTF-соревнования"
+                }
+              ],
+              [
+                {
+                  "text": "Погода"
+                },
+                {
+                  "text": "Помощь"
+                }
+              ]
+            ],
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Одногруппник [фикстура]",
+      "fixture_user_id": 900000002,
+      "input": "location: 55.7558, 37.6173 (fixture)",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Погода по переданным координатам.\n\nПогода сейчас: Москва\nОблачно\nТемпература: 8.5 °C (ощущается как 6.8 °C)\nВетер: 3.2 м/с. Слабый ветер.\nИсточник: OpenWeatherMap.",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "text": "Фото котика"
+                },
+                {
+                  "text": "Мой аватар"
+                }
+              ],
+              [
+                {
+                  "text": "Мой ID"
+                },
+                {
+                  "text": "CTF-соревнования"
+                }
+              ],
+              [
+                {
+                  "text": "Погода"
+                },
+                {
+                  "text": "Помощь"
+                }
+              ]
+            ],
+            "resize_keyboard": true
+          }
+        }
+      ]
+    },
+    {
+      "fixture_user": "Ерохина [фикстура]",
+      "input": "Фото котика; HTTP 429 fixture",
+      "output": [
+        {
+          "kind": "reply_text",
+          "text": "Сервис ограничил частоту запросов. Повторите позже.",
+          "reply_markup": {
+            "keyboard": [
+              [
+                {
+                  "text": "Фото котика"
+                },
+                {
+                  "text": "Мой аватар"
+                }
+              ],
+              [
+                {
+                  "text": "Мой ID"
+                },
+                {
+                  "text": "CTF-соревнования"
+                }
+              ],
+              [
+                {
+                  "text": "Погода"
+                },
+                {
+                  "text": "Помощь"
+                }
+              ]
+            ],
+            "resize_keyboard": true
+          }
+        }
+      ]
+    }
+  ],
+  "http_requests": [
+    {
+      "path": "/cat",
+      "method": "GET",
+      "payload": {
+        "limit": "1",
+        "breed_ids": "beng",
+        "order": "RAND",
+        "mime_types": "jpg,png",
+        "has_breeds": "1"
+      },
+      "cat_key_present": true
+    },
+    {
+      "path": "/weather",
+      "method": "GET",
+      "payload": {
+        "lat": "55.7558",
+        "lon": "37.6173",
+        "appid": "FIXTURE_WEATHER_KEY_NOT_REAL",
+        "units": "metric",
+        "lang": "ru"
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/ctf",
+      "method": "GET",
+      "payload": {
+        "limit": "10",
+        "start": "1791288000",
+        "finish": "1799064000"
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/weather",
+      "method": "GET",
+      "payload": {
+        "lat": "55.7558",
+        "lon": "37.6173",
+        "appid": "FIXTURE_WEATHER_KEY_NOT_REAL",
+        "units": "metric",
+        "lang": "ru"
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/cat",
+      "method": "GET",
+      "payload": {
+        "limit": "1",
+        "breed_ids": "beng",
+        "order": "RAND",
+        "mime_types": "jpg,png",
+        "has_breeds": "1"
+      },
+      "cat_key_present": true
+    },
+    {
+      "path": "/weather",
+      "method": "GET",
+      "payload": {
+        "lat": "55.7558",
+        "lon": "37.6173",
+        "appid": "FIXTURE_WEATHER_KEY_NOT_REAL",
+        "units": "metric",
+        "lang": "ru"
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/ctf",
+      "method": "GET",
+      "payload": {
+        "limit": "10",
+        "start": "1791288000",
+        "finish": "1799064000"
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/weather",
+      "method": "GET",
+      "payload": {
+        "lat": "55.7558",
+        "lon": "37.6173",
+        "appid": "FIXTURE_WEATHER_KEY_NOT_REAL",
+        "units": "metric",
+        "lang": "ru"
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/cat",
+      "method": "GET",
+      "payload": {
+        "limit": "1",
+        "breed_ids": "beng",
+        "order": "RAND",
+        "mime_types": "jpg,png",
+        "has_breeds": "1"
+      },
+      "cat_key_present": true
+    },
+    {
+      "path": "/botFIXTURE_TOKEN_NOT_REAL/getUpdates",
+      "method": "GET",
+      "payload": {
+        "timeout": "0",
+        "allowed_updates": "[\"message\"]"
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/botFIXTURE_TOKEN_NOT_REAL/sendMessage",
+      "method": "POST",
+      "payload": {
+        "chat_id": 900000001,
+        "text": "Привет [фикстура]"
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/botFIXTURE_TOKEN_NOT_REAL/sendPhoto",
+      "method": "POST",
+      "payload": {
+        "chat_id": 900000001,
+        "photo": "https://example.org/FIXTURE.jpg",
+        "caption": "Учебная рассылка: изображение."
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/botFIXTURE_TOKEN_NOT_REAL/sendMessage",
+      "method": "POST",
+      "payload": {
+        "chat_id": 900000002,
+        "text": "Привет [фикстура]"
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/botFIXTURE_TOKEN_NOT_REAL/sendPhoto",
+      "method": "POST",
+      "payload": {
+        "chat_id": 900000002,
+        "photo": "https://example.org/FIXTURE.jpg",
+        "caption": "Учебная рассылка: изображение."
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/botFIXTURE_TOKEN_NOT_REAL/sendMessage",
+      "method": "POST",
+      "payload": {
+        "chat_id": 900000001,
+        "text": "Привет [фикстура]"
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/botFIXTURE_TOKEN_NOT_REAL/sendMessage",
+      "method": "POST",
+      "payload": {
+        "chat_id": 900000002,
+        "text": "Привет [фикстура]"
+      },
+      "cat_key_present": false
+    },
+    {
+      "path": "/botFIXTURE_TOKEN_NOT_REAL/sendPhoto",
+      "method": "POST",
+      "payload": {
+        "chat_id": 900000002,
+        "photo": "https://example.org/FIXTURE.jpg",
+        "caption": "Учебная рассылка: изображение."
+      },
+      "cat_key_present": false
+    }
+  ],
+  "get_updates_fixture_result": [
+    {
+      "update_id": 1001,
+      "message": {
+        "message_id": 1,
+        "chat": {
+          "id": 900000001,
+          "type": "private"
+        },
+        "from": {
+          "id": 900000001,
+          "first_name": "Ерохина [фикстура]",
+          "is_bot": false
+        },
+        "text": "/start"
+      }
+    },
+    {
+      "update_id": 1002,
+      "message": {
+        "message_id": 2,
+        "chat": {
+          "id": 900000002,
+          "type": "private"
+        },
+        "from": {
+          "id": 900000002,
+          "first_name": "Одногруппник [фикстура]",
+          "is_bot": false
+        },
+        "text": "/start"
+      }
+    },
+    {
+      "update_id": 1003,
+      "message": {
+        "message_id": 3,
+        "chat": {
+          "id": -900000003,
+          "type": "group"
+        },
+        "text": "Групповой чат [фикстура]"
+      }
+    }
+  ],
+  "next_offset": 1004,
+  "broadcast_fixture_results": [
+    {
+      "chat_id": 900000001,
+      "status": "sent",
+      "sent_steps": [
+        "message",
+        "photo"
+      ]
+    },
+    {
+      "chat_id": 900000002,
+      "status": "sent",
+      "sent_steps": [
+        "message",
+        "photo"
+      ]
+    }
+  ],
+  "blocked_user_fixture_results": [
+    {
+      "chat_id": 900000001,
+      "status": "failed",
+      "code": 403,
+      "sent_steps": []
+    },
+    {
+      "chat_id": 900000002,
+      "status": "sent",
+      "sent_steps": [
+        "message",
+        "photo"
+      ]
+    }
+  ]
+}

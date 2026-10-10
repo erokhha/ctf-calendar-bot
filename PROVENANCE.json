@@ -1,0 +1,25 @@
+{
+  "derived_from_repository": "https://github.com/Wyndace/CTF-Calendar-BOT",
+  "original_file": "ctf-games.py",
+  "commit": "044aa1b10d1402b36b408b09bf131d929fb44d4f",
+  "git_blob": "f32ea24cb8fad9309e766c25bb9c109b027084ef",
+  "fetched_original_sha256": "915674b1481ad6cb246af8db12c565ab9be50e387209926cd4eb7e691b6707f2",
+  "license_file_present_in_checked_tree": false,
+  "original_file_included_in_deliverable": false,
+  "adapted_features": [
+    "CTF use case",
+    "ctf_text card fields and location branches",
+    "showctf command",
+    "inline card navigation"
+  ],
+  "not_ported": [
+    "HTML scraping with fixed year 2021",
+    "exec keyboard builder",
+    "Timer notification loop",
+    "hardcoded chat ID"
+  ],
+  "live_telegram_execution": false,
+  "live_external_api_execution": false,
+  "pythonanywhere_deployed": false,
+  "github_modified": false
+}

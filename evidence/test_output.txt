@@ -1,0 +1,53 @@
+LOCAL TEST RUN — SYNTHETIC FIXTURES; NO TELEGRAM DELIVERY
+Python 3.12.14
+{"python-telegram-bot": "22.5", "aiohttp": "3.13.5", "python-dotenv": "1.1.1", "httpx": "0.28.1"}
+
+test_application_registers_commands_and_callbacks_without_network (test_project.ConfigurationAndStructureTests.test_application_registers_commands_and_callbacks_without_network) ... ok
+test_avatar_is_deterministic_and_user_specific (test_project.ConfigurationAndStructureTests.test_avatar_is_deterministic_and_user_specific) ... ok
+test_broadcast_requires_confirm_before_token_or_network (test_project.ConfigurationAndStructureTests.test_broadcast_requires_confirm_before_token_or_network) ... ok
+test_dotenv_reads_local_fixture (test_project.ConfigurationAndStructureTests.test_dotenv_reads_local_fixture) ... ok
+test_import_main_has_no_network_or_polling (test_project.ConfigurationAndStructureTests.test_import_main_has_no_network_or_polling) ... ok
+test_invalid_numeric_configuration (test_project.ConfigurationAndStructureTests.test_invalid_numeric_configuration) ... ok
+test_missing_required_token (test_project.ConfigurationAndStructureTests.test_missing_required_token) ... ok
+test_secret_filter_removes_token_and_api_key (test_project.ConfigurationAndStructureTests.test_secret_filter_removes_token_and_api_key) ... ok
+test_url_validation (test_project.ConfigurationAndStructureTests.test_url_validation) ... ok
+test_broadcast_blocked_first_continues_second (test_project.DirectAPITests.test_broadcast_blocked_first_continues_second) ... ok
+test_broadcast_hello_and_photo_to_two_fixtures (test_project.DirectAPITests.test_broadcast_hello_and_photo_to_two_fixtures) ... ok
+test_direct_malformed_json_and_timeout (test_project.DirectAPITests.test_direct_malformed_json_and_timeout) ... ok
+test_direct_send_message_and_photo (test_project.DirectAPITests.test_direct_send_message_and_photo) ... ok
+test_get_updates_extracts_only_private_chat_ids (test_project.DirectAPITests.test_get_updates_extracts_only_private_chat_ids) ... ok
+test_ctf_callbacks_reject_bad_index_and_other_users_snapshot (test_project.HandlerTests.test_ctf_callbacks_reject_bad_index_and_other_users_snapshot) ... ok
+test_ctf_inline_snapshot_navigation_and_stale_callback (test_project.HandlerTests.test_ctf_inline_snapshot_navigation_and_stale_callback) ... ok
+test_ctf_same_page_bad_request_does_not_crash (test_project.HandlerTests.test_ctf_same_page_bad_request_does_not_crash) ... ok
+test_id_user_and_chat_for_two_synthetic_users (test_project.HandlerTests.test_id_user_and_chat_for_two_synthetic_users) ... ok
+test_location_button_and_weather_return_menu (test_project.HandlerTests.test_location_button_and_weather_return_menu) ... ok
+test_missing_location_is_handled_without_http (test_project.HandlerTests.test_missing_location_is_handled_without_http) ... ok
+test_moscow_is_explicit_fallback (test_project.HandlerTests.test_moscow_is_explicit_fallback) ... ok
+test_personalized_start_for_two_synthetic_users (test_project.HandlerTests.test_personalized_start_for_two_synthetic_users) ... ok
+test_photo_and_avatar_are_send_photo_calls (test_project.HandlerTests.test_photo_and_avatar_are_send_photo_calls) ... ok
+test_telegram_photo_bad_request_returns_menu (test_project.HandlerTests.test_telegram_photo_bad_request_returns_menu) ... ok
+test_unknown_input_has_help_and_keyboard (test_project.HandlerTests.test_unknown_input_has_help_and_keyboard) ... ok
+test_weather_failure_restores_menu (test_project.HandlerTests.test_weather_failure_restores_menu) ... ok
+test_session_created_and_closed_in_application_lifecycle (test_project.LifecycleTests.test_session_created_and_closed_in_application_lifecycle) ... ok
+test_cat_breed_random_params_and_api_key (test_project.ServiceTests.test_cat_breed_random_params_and_api_key) ... ok
+test_cat_empty_and_unsafe_urls (test_project.ServiceTests.test_cat_empty_and_unsafe_urls) ... ok
+test_cat_empty_list (test_project.ServiceTests.test_cat_empty_list) ... ok
+test_ctf_all_bad_records_have_friendly_error (test_project.ServiceTests.test_ctf_all_bad_records_have_friendly_error) ... ok
+test_ctf_dynamic_window_and_card (test_project.ServiceTests.test_ctf_dynamic_window_and_card) ... ok
+test_ctf_empty_and_invalid_response (test_project.ServiceTests.test_ctf_empty_and_invalid_response) ... ok
+test_ctf_end_before_start_is_rejected (test_project.ServiceTests.test_ctf_end_before_start_is_rejected) ... ok
+test_ctf_partial_bad_records_are_skipped (test_project.ServiceTests.test_ctf_partial_bad_records_are_skipped) ... ok
+test_http_401_403_429_500 (test_project.ServiceTests.test_http_401_403_429_500) ... ok
+test_invalid_json_and_content_type (test_project.ServiceTests.test_invalid_json_and_content_type) ... ok
+test_invalid_request_url (test_project.ServiceTests.test_invalid_request_url) ... ok
+test_network_failure (test_project.ServiceTests.test_network_failure) ... ok
+test_timeout (test_project.ServiceTests.test_timeout) ... ok
+test_weather_coordinates_units_and_fields (test_project.ServiceTests.test_weather_coordinates_units_and_fields) ... ok
+test_weather_incomplete_and_invalid_schema (test_project.ServiceTests.test_weather_incomplete_and_invalid_schema) ... ok
+test_weather_invalid_coordinates_no_http (test_project.ServiceTests.test_weather_invalid_coordinates_no_http) ... ok
+test_weather_missing_key_no_http (test_project.ServiceTests.test_weather_missing_key_no_http) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 1.009s
+
+OK

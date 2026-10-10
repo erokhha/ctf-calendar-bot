@@ -1,0 +1,18 @@
+{
+  "evidence_kind": "SYNTHETIC_FIXTURES_NOT_LIVE_ACCOUNTS_OR_LIVE_API",
+  "users": [
+    {"id": 900000001, "first_name": "Ерохина [фикстура]", "username": "fixture_erokhina", "is_bot": false},
+    {"id": 900000002, "first_name": "Одногруппник [фикстура]", "username": "fixture_peer", "is_bot": false}
+  ],
+  "cat": [{"id": "FIXTURE_ONLY_BENG", "url": "https://cdn2.thecatapi.com/images/FIXTURE_ONLY_BENG.jpg", "breeds": [{"id": "beng", "name": "Bengal"}]}],
+  "weather": {"name": "Москва", "weather": [{"description": "облачно"}], "main": {"temp": 8.5, "feels_like": 6.8}, "wind": {"speed": 3.2}},
+  "ctf": [
+    {"id": 9900001, "title": "Учебный CTF Alpha [фикстура]", "format": "Jeopardy", "start": "2026-10-10T10:00:00+00:00", "finish": "2026-10-11T10:00:00+00:00", "onsite": false, "location": ""},
+    {"id": 9900002, "title": "Учебный CTF Beta [фикстура]", "format": "Attack-Defense", "start": "2026-10-17T09:00:00+00:00", "finish": "2026-10-17T17:00:00+00:00", "onsite": true, "location": "Учебная аудитория"}
+  ],
+  "updates": [
+    {"update_id": 1001, "message": {"message_id": 1, "chat": {"id": 900000001, "type": "private"}, "from": {"id": 900000001, "first_name": "Ерохина [фикстура]", "is_bot": false}, "text": "/start"}},
+    {"update_id": 1002, "message": {"message_id": 2, "chat": {"id": 900000002, "type": "private"}, "from": {"id": 900000002, "first_name": "Одногруппник [фикстура]", "is_bot": false}, "text": "/start"}},
+    {"update_id": 1003, "message": {"message_id": 3, "chat": {"id": -900000003, "type": "group"}, "text": "Групповой чат [фикстура]"}}
+  ]
+}
