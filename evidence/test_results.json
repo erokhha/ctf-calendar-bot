@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-10T11:49:34.529101+00:00",
+  "generated_at_utc": "2026-10-10T12:13:35.489608+00:00",
   "kind": "actual_local_test_execution_with_synthetic_fixtures",
   "live_telegram": false,
   "live_external_apis": false,
@@ -208,7 +208,7 @@
   "fixtures_sha256": "53d45ae09451d9adae78a71e945f4ae5a7e29fad65ad1f2fd9f6f729e4cbad80",
   "source_sha256": {
     "api_examples.py": "2cddcd197b82e6cb6d260eadf7f9f1bcbf7775a106d5b9138ea5a5ac74f0ead3",
-    "bot.py": "6ae6804c143a9c7c54db299bb5c7c5741c15e739bc4362d4b1217ea68b8fce1c",
+    "bot.py": "eb141bbc13a568cdeb3e57283597efc0b33991a9061343894b5bdd0ff41b1b93",
     "config.py": "a77e9c63e14023aab65f45c139cf1805c2f3d1b3aa3662a93188ccdb3440c903",
     "demo_local.py": "9d9108cb5114404ac2007fe113d202fcfec0c950b6fa4bd1703b66cf3f571cdf",
     "example_for_log.py": "8b484aeb51c7ac6a68d5f882fe1bc7ce94bd107dcfa7ffb65cc59ab9933dcb7f",

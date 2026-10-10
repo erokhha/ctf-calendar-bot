@@ -440,6 +440,11 @@ class LifecycleTests(unittest.IsolatedAsyncioTestCase):
             app = SimpleNamespace(bot_data={"settings": Settings(db_path=Path(tmp) / "chats.sqlite3")},
                                   bot=SimpleNamespace(set_my_commands=AsyncMock()))
             await post_init(app)
+            commands = app.bot.set_my_commands.await_args.args[0]
+            self.assertEqual(
+                [command.command for command in commands],
+                ["start", "help", "id", "myid", "ctf", "showctf", "weather"],
+            )
             session = app.bot_data["session"]
             self.assertFalse(session.closed)
             self.assertTrue(session.trust_env)
